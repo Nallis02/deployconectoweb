@@ -57,6 +57,7 @@
             </b-button>
             <b-button
               size="sm"
+              class="me-2 btn-alt"
               variant="danger"
               @click="abrirModalEliminar(row.item.id)"
             >
