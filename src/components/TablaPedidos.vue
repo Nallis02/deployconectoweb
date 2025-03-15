@@ -46,6 +46,7 @@
 
           <!-- Columna de Acciones -->
           <template #cell(acciones)="row">
+            <div class="d-flex justify-content-center gap-2">
             <b-button
               size="sm"
               variant="warning"
@@ -61,6 +62,7 @@
             >
               Eliminar
             </b-button>
+          </div>
           </template>
         </b-table>
       </div>

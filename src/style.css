@@ -75,9 +75,12 @@ h1 {
   color: white;
   background: black;
 }
-.boton {
-  background: #ff9000;
-  border: 1px solid #ff9000;
+.boton, .btn-alt {
+  display: block;
+  width: fit-content;
+  margin: 10px auto; 
+  padding: 12px 20px;
+  text-align: center;
 }
 .boton:hover {
   background: #5f021f;
@@ -100,12 +103,13 @@ h1 {
   border: 1px solid #ff9000;
 }
 footer {
-  text-align: center;
-  padding: 10px;
-  margin-top: auto;
-  background:#5f021f;
+  margin-top: 20px;
+  padding: 15px;
+  background: #5f021f;
   color: white;
+  text-align: center;
 }
+
 .b-table {
   background: white;
   border-radius: 8px;
@@ -187,6 +191,7 @@ a:hover {
 
   .menu {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin-top: 10px;
     margin-right: 0;
@@ -213,8 +218,11 @@ a:hover {
 
   .b-table {
     font-size: 14px;
-    overflow-x: auto; /* Hacer que la tabla se desplace horizontalmente */
+    overflow-x: auto; 
     display: block;
+  }
+  footer {
+    margin-top: auto; 
   }
 }
 
