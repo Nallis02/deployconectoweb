@@ -5,10 +5,9 @@ body {
   background-color: #f0f0f0;
 }
 #app {
-  font-family: monospace;
-  text-align: center;
-  height: 100vh;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .container {
   max-width: 1200px; 
@@ -21,12 +20,13 @@ body {
 }
 
 nav {
-  padding: 30px;
   display: flex;
-  align-items: center;
-  background: #5f021f;
   justify-content: space-between;
-  padding: 20 100px 20 100px;
+  align-items: center;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  flex-wrap: wrap;
 }
 nav img {
   margin-left: 100px;
@@ -45,9 +45,29 @@ nav a.router-link-exact-active {
   color: #ff9000;
 }
 .logo {
-  height: 50px;
-  margin-right: 10px;
+  max-width: 180px;
+  height: auto;
 }
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 15px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.menu a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
 .container {
   max-width: 900px;
   padding: 50px;
@@ -83,17 +103,11 @@ h1 {
   border: 1px solid #ff9000;
 }
 footer {
-    background-color: #5f021f;
-    color: #fefefe;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 30px;
-    margin-top: 40px;
-    bottom: 0;
-    height: 90px;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  background:#5f021f;
+  color: white;
 }
 .b-table {
   background: white;
@@ -162,25 +176,22 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* 📱 Estilos responsivos */
+/* Estilos responsivos */
 @media (max-width: 768px) {
-  /* Asegurar que la tabla no desborde la pantalla */
-  .tabla-responsive {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  /* Botones más compactos en móviles */
-  .btn-alt {
-    font-size: 14px;
-    padding: 8px 12px;
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-  /* Select de estado más amigable en móviles */
-  .estado-select {
-    font-size: 14px;
-    padding: 6px;
+  .logo {
+    max-width: 150px;
   }
 }
 
