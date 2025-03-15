@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+#app {
+  font-family: monospace;
+  text-align: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+.container {
+  max-width: 1200px; 
+  width: 100%; 
+  margin: auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background: #5f021f;
+  justify-content: space-between;
+  padding: 20 100px 20 100px;
+}
+nav img {
+  margin-left: 100px;
+}
+nav .menu{ 
+  margin-right: 80px;
+}
+nav a {
+  font-weight: bold;
+  color: #fefefe;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+nav a.router-link-exact-active {
+  color: #ff9000;
+}
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+.container {
+  max-width: 900px;
+  padding: 50px;
+  color: black;
+  background: #5f021f;
+}
+h1 {
+  color: white;
+  background: black;
+}
+.boton {
+  background: #ff9000;
+  border: 1px solid #ff9000;
+}
+.boton:hover {
+  background: #5f021f;
+  border: 1px solid white;
+}
+.btn-alt{
+  background: #ff9000;
+  border: 1px solid #ff9000;
+  margin-bottom: 15px;
+  min-width: 80px;
+  color: white;
+}
+.btn-alt:hover{
+  background: #5f021f;
+  border: 1px solid #ff9000;
+  color: white;
+}
+.btn-alt:active{
+  background: #5f021f;
+  border: 1px solid #ff9000;
+}
+footer {
+    background-color: #5f021f;
+    color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    margin-top: 40px;
+    bottom: 0;
+    height: 90px;
+}
+.b-table {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.b-table td, .b-table th {
+  text-align: center;
+  padding: 12px;
+  vertical-align: middle;
+}
+
+a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.estado-select {
+  font-weight: bold;
+  text-align: center;
+}
+
+.estado-select option[value="Pendiente"] {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.estado-select option[value="En Progreso"] {
+  color: #17a2b8;
+  font-weight: bold;
+}
+
+.estado-select option[value="Terminado"] {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.b-button.warning {
+  background: #ffeb3b;
+  color: black;
+  border: none;
+}
+
+.b-button.danger {
+  background: #f44336;
+  color: white;
+  border: none;
+}
+
+.b-button.danger:hover {
+  background: #d32f2f;
+}
+.b-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+.b-table td, .b-table th {
+  white-space: nowrap; /* Evita saltos de línea */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 📱 Estilos responsivos */
+@media (max-width: 768px) {
+  /* Asegurar que la tabla no desborde la pantalla */
+  .tabla-responsive {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Botones más compactos en móviles */
+  .btn-alt {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Select de estado más amigable en móviles */
+  .estado-select {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+/* 🖥 Estilos para tabletas */
+@media (max-width: 1024px) {
+  .tabla-responsive {
+    font-size: 15px;
+  }
+
+  .btn-alt {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+}
+
+/* 💻 Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+  .tabla-responsive {
+    font-size: 16px;
+  }
+}
