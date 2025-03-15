@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite --base=/app-pedidos-cw build",
+    "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
