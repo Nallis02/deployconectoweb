@@ -5,23 +5,5 @@ import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [vue()],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            if (id.includes("vue")) {
-              return "vue"; // Separar Vue en su propio chunk
-            }
-            return "vendor"; // Agrupar el resto de librerías en otro chunk
-          }
-        },
-      },
-    },
-    chunkSizeWarningLimit: 1000, // Evita la advertencia de tamaño
-  },
-  server: {
-    port: 5173, // Opcional: cambia el puerto si el 3000 está ocupado
-  },
-  base: "./", // Importante para despliegue en Netlify
+  base: "https://Nallis02.git.oi/deployconectoweb",
 });
