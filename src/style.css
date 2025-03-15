@@ -99,7 +99,7 @@ h1 {
   background: #5f021f;
   border: 1px solid #ff9000;
   margin-bottom: 15px;
-  min-width: 80px;
+  min-width: 90px;
   color: white;
 }
 .btn-alt:hover{
@@ -224,7 +224,11 @@ a:hover {
     padding: 12px 18px;
     min-width: 100px;
   }
-
+  .btn-alt2 {
+    font-size: 16px;
+    padding: 12px 18px;
+    min-width: 100px;
+  }
   .b-table {
     font-size: 14px;
     overflow-x: auto; 
