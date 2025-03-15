@@ -5,5 +5,5 @@ import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [vue()],
-  base: "https://nallis02.github.io/deployconectoweb/",
+  base: "/deployconectoweb/",
 });
